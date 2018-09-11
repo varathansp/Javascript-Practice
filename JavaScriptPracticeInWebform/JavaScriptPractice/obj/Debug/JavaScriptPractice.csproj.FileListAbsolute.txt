@@ -1,0 +1,4 @@
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPractice\JavaScriptPractice\bin\JavaScriptPractice.dll
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPractice\JavaScriptPractice\bin\JavaScriptPractice.pdb
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPractice\JavaScriptPractice\obj\Debug\JavaScriptPractice.dll
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPractice\JavaScriptPractice\obj\Debug\JavaScriptPractice.pdb
