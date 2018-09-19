@@ -1,0 +1,8 @@
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\bin\JavaScriptPracticeApp.dll
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\bin\JavaScriptPracticeApp.pdb
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\obj\Debug\JavaScriptPracticeApp.dll
+C:\Users\suyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\obj\Debug\JavaScriptPracticeApp.pdb
+C:\Users\vsuyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\bin\JavaScriptPracticeApp.dll
+C:\Users\vsuyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\bin\JavaScriptPracticeApp.pdb
+C:\Users\vsuyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\obj\Debug\JavaScriptPracticeApp.dll
+C:\Users\vsuyambu\Documents\Visual Studio 2010\Projects\JavaScriptPracticeApp\JavaScriptPracticeApp\obj\Debug\JavaScriptPracticeApp.pdb
