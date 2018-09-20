@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Arrays</title>
+    <script type="text/javascript">
+        //var myArray = new Array(10, 20, 30);
+        //var myArray = [];
+        var myArray = new Array(3);
+        myArray[0] = 10;
+        myArray[1] = 20;
+        myArray[2] = 30;
+
+        alert("Sample Array " + myArray);
+
+        var evenNumbersArray = [];
+
+        for (var i = 0; i <= 5; i++) {
+            evenNumbersArray[i] = i * 2;
+        }
+
+        alert("Even Array "+evenNumbersArray);
+
+
+        document.write("Using For Loop");
+        for (var i = 0; i < evenNumbersArray.length; i++) {
+            document.write(evenNumbersArray[i] + "<br/>");
+        }
+
+        var myArray = [];
+
+        for (var i = 0; i <= 5; i++) {
+            myArray.push(i * 2);
+        }
+
+        alert("using push method" + myArray.length);
+
+        document.write("using pop method");
+        for (var i = 0; i <= 5; i++) {
+            document.write(myArray.pop() + "<br/>");
+        }
+
+        alert("The length is" + myArray.length);
+
+        for (var i = 0; i <= 5; i++) {
+            myArray.push(i * 2);
+        }
+        myArray.unshift(1);
+        var firstElement = myArray.shift();
+        document.write("First element using shift= " + firstElement + "<br/><br/>");
+    </script>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Arguments</title>
+    <script type="text/javascript">
+        function printArgument()
+        {
+            document.write("The argument count is " + arguments.length);
+
+            for (var i = 0; i < arguments.length; i++)
+            {
+                document.write("Index is " + i + " - " + "Argument value is " + arguments[i] + "<br/>")
+            }
+        }
+        printArgument();
+        printArgument(12, 17, 20);
+        printArgument("abc", "xyz");
+    </script>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Strings</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        function usingOperator() {
+            var firstString = document.getElementById("txtFirstString").value;
+            var secondString = document.getElementById("txtSecondString").value;
+            document.getElementById("txtResult").value = firstString + " " + secondString;
+            
+        }
+        function usingConcat() {
+            var firstString = document.getElementById("txtFirstString").value;
+            var secondString = document.getElementById("txtSecondString").value;
+            document.getElementById("txtResult").value = firstString.concat(" ",secondString);
+        }
+        function nameDomain() {
+            var email = document.getElementById("txtEmail").value;
+            var name = email.substring(0, email.indexOf("@@"));
+            var domain = email.substring(email.indexOf("@@")+1);
+            //lastIndexOF()
+            //substr(1,5)
+            //slice(1,5)
+            document.getElementById("txtName").value = name;
+            document.getElementById("txtDomain").value = domain;
+        }
+        
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>First String</td>
+            <td><input type="text" id="txtFirstString" /></td>
+        </tr>
+        <tr>
+            <td>First String</td>
+            <td><input type="text" id="txtSecondString" /></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td><input type="text" id="txtResult" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="btnPlusOperator" value="+ operator" onclick="usingOperator()" /></td>
+            <td><input type="button" id="btnConcatMethod" value="concat()" onclick="usingConcat()" /></td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" id="txtEmail" /></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="txtName" /></td>
+        </tr>
+        <tr>
+            <td>Domain</td>
+            <td><input type="text" id="txtDomain" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="btnSplit" value="Name & Domain" onclick="nameDomain()" /></td>
+        </tr>
+    </table>
+</body>
+</html>

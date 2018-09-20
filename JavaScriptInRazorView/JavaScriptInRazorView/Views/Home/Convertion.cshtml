@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Convertion</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        function addNumber() {
+            var firstNumber = document.getElementById("txtFirstNumber").value;
+            if (firstNumber == "") { alert("please enter first number"); return; }
+            firstNumber = parseFloat(firstNumber);
+            if (isNaN(firstNumber)) { alert("Please enter a valid first number"); return; }
+
+            var secondNumber = document.getElementById("txtSecondNumber").value;
+            if (secondNumber == "") { alert("please enter second number"); return; }
+            secondNumber = parseFloat(secondNumber);
+            if (isNaN(secondNumber)) { alert("Please enter a valid second number"); return; }
+            
+            //parseFloat
+
+            document.getElementById("txtResult").value = firstNumber + secondNumber;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>First Number</td>
+            <td><input type="text" id="txtFirstNumber" /></td>
+        </tr>
+        <tr>
+            <td>Second Number</td>
+            <td><input type="text" id="txtSecondNumber" /></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td><input type="text" id="txtResult" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="btnSubmit" value="Add" onclick="addNumber()" /></td>
+        </tr>
+    </table>
+</body>
+</html>

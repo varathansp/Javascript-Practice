@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" language="javascript">
+    function validateFn() {
+        alert("Clicked");
+        var result = true;
+        if (document.getElementById("txtName").value == "") {
+            document.getElementById("lblName").innerText = "Please enter the name";
+            result = false;
+            alert("Name No");
+        }
+        else {
+            document.getElementById("lblName").innerText = "";
+      
+        }
+        if (document.getElementById("txtEmail").value == "") {
+            document.getElementById("lblEmail").textContent = "Please enter the Email";
+            result = false;
+       
+        }
+        else {
+            document.getElementById("lblEmail").textContent ="";
+         
+        }
+        return result;
+    }
+    
+
+</script>
+
+@using (Html.BeginForm("Index", "Home"))
+{
+<table>
+    <tr>
+        <td>Name</td>
+        <td>  @Html.TextBox("txtName", "", new { @id = "txtName" }) </td>
+        <td><label id="lblName"></label></td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Html.TextBox("txtEmail", "", new { @id = "txtEmail" })</td>
+        <td><label id="lblEmail"></label></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Submit" id="btnSubmit" onclick="return validateFn()" /></td>
+    </tr>
+</table>
+}
